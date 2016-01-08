@@ -25,19 +25,26 @@ Also, there might be other boxes in the future, so check out *Setup* section bel
 Also, all requirements they have, we have as well...*
 
 ### Setup
-Setup is fairly simple as it consists of just 5 steps:
+Setup is fairly simple as it consists of just 4 steps:
 
   1. Install Vagrant and VirtualBox
   2. Copy file `puphpet/boxes/hiera/magento2_data.yaml.dist` to `puphpet/boxes/hiera/magento2_data.yaml` and update 
   contents of copied file. Magento connect data is mandatory in order to get `magento2` box up and running. Instructions 
   are available here: 
   ([magento connect credentials](https://www.magentocommerce.com/magento-connect/customerdata/secureKeys/list/))
-  3. Run `vagrant up`
+  3. Run `sh command.sh <ENVIRONMENT> <VAGRANT_COMMAND>` (i.e. `sh command.sh STARCommerce up`)
   4. Append `192.168.56.100 star.commerce.dev` and `192.168.56.102 magento2.api.provider` lines to your 
   [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system)
   
-Application data will be accessible through load balancer at [http://star.commerce.dev](http://star.commerce.dev) and 
-Magento 2 installation at [http://magento2.api.provider](http://magento2.api.provider).
+### Environments
+#### "STARCommerce" environment
+STAR Commerce application will be accessible through load balancer at
+[http://star.commerce.dev](http://star.commerce.dev) and Magento 2 installation at 
+[http://magento2.api.provider](http://magento2.api.provider).
+
+#### "Magento2" environment
+Magento 2 will be accessible through load balancer at
+[http://magento2.dev](http://star.commerce.dev).
 
 To see what's exactly happening, check out `*.yaml` files in `/puphpet/boxes` directory
 
