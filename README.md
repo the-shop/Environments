@@ -30,7 +30,7 @@ Setup is fairly simple as it consists of just 6 steps:
   1. Install Vagrant and VirtualBox
   2. Clone this repository to your machine 
   3. From project root, run `init.sh` shell script (initializes dependencies)
-  4. Copy file `puphpet/boxes/hiera/magento2_data.yaml.dist` to `puphpet/boxes/hiera/magento2_data.yaml` and update 
+  4. Copy file `puphpet/boxes/<ENVIRONMENT>/hiera/magento2_data.yaml.dist` to `puphpet/boxes/<ENVIRONMENT>/hiera/magento2_data.yaml` and update 
   contents of copied file. Magento connect data is mandatory in order to get `magento2` box up and running. Instructions 
   are available here: 
   ([magento connect credentials](https://www.magentocommerce.com/magento-connect/customerdata/secureKeys/list/))
@@ -39,6 +39,14 @@ Setup is fairly simple as it consists of just 6 steps:
   in [Environments](README.md#environments) section
   
 ### Environments
+Currently available environments are:
+  - STARCommerce
+  - Magento2
+  
+Both of them require 
+[Magento connect key pair]((https://www.magentocommerce.com/magento-connect/customerdata/secureKeys/list/)) in order to 
+be fully and correctly provisioned. 
+
 #### "STARCommerce" environment
   - STAR Commerce application will be accessible through load balancer at
 [http://star.commerce.dev](http://star.commerce.dev) and Magento 2 installation at 
