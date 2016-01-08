@@ -1,8 +1,5 @@
 #!/bin/bash
 
-git submodule init
-git submodule update
-
 # Read the first passed in param as environment
 export ENV=$1
 
