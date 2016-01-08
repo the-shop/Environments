@@ -25,7 +25,7 @@ Also, there might be other boxes in the future, so check out *Setup* section bel
 Also, all requirements they have, we have as well...*
 
 ### Setup
-Setup is fairly simple as it consists of just 4 steps:
+Setup is fairly simple as it consists of just 5 steps:
 
   1. Install Vagrant and VirtualBox
   2. Copy file `puphpet/boxes/hiera/magento2_data.yaml.dist` to `puphpet/boxes/hiera/magento2_data.yaml` and update 
