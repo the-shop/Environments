@@ -16,8 +16,9 @@ This repository is currently set up for local development and it utilizes [Vagra
 You should [read more on Vagrant](https://docs.vagrantup.com/v2/why-vagrant/index.html) if you're not familiar with it
 before you proceed.
 
-Supported box types are: loadbalancer, application, database, apiprovider. Initial `vagrant up` will spin up 
-everything that you need to have local setup available at star.commerce.dev on you machine after following setup below.
+Supported box types are: loadbalancer, application, database, magento2. Initial `vagrant up` will spin up 
+everything that you need to have local setup available at `star.commerce.dev`, `magento2.api.provider` and/or 
+`magento2.dev` on you machine after following setup below and depending on what environment are you setting up.
 
 Also, there might be other boxes in the future, so check out *Setup* section below in the future if you have any issues.
 
