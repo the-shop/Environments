@@ -48,17 +48,17 @@ Both of them require
 [Magento connect key pair]((https://www.magentocommerce.com/magento-connect/customerdata/secureKeys/list/)) in order to 
 be fully and correctly provisioned. 
 
-#### "STARCommerce" environment
+#### "[STARCommerce](https://github.com/the-shop/STARCommerceBoxes)" environment
   - STAR Commerce application will be accessible through load balancer at
 [http://star.commerce.dev](http://star.commerce.dev) and Magento 2 installation at 
 [http://magento2.api.provider](http://magento2.api.provider).
   - Hosts setup: append `192.168.56.100 star.commerce.dev` and `192.168.56.102 magento2.api.provider` lines to your 
 [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system)
 
-#### "Magento2" environment
+#### "[Magento2](https://github.com/the-shop/Magento2Boxes)" environment
   - Magento 2 will be accessible through load balancer at
-[http://magento2.dev](http://star.commerce.dev).
-  - Hosts setup: append `192.168.56.100 magento2.dev`line to your 
+[http://magento2.dev](http://magento2.dev).
+  - Hosts setup: append `192.168.56.120 magento2.dev`line to your 
 [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system)
 
 To see what's exactly happening, check out `*.yaml` files in `/puphpet/boxes` directory
