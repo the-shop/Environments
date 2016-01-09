@@ -43,6 +43,10 @@ Setup is fairly simple as it consists of just 6 steps:
 Currently available environments are:
   - STARCommerce
   - Magento2
+  - GenericLAMP
+  
+**IMPORTANT: GenericLAMP is still early WIP, and STARCommerce and Magento2 environments although fully operational 
+don't play well if started together - there are plans to fix it, but it's not done yet.**
   
 Both of them require 
 [Magento connect key pair]((https://www.magentocommerce.com/magento-connect/customerdata/secureKeys/list/)) in order to 
