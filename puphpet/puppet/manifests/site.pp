@@ -35,7 +35,7 @@ Exec { path => [ '/bin/', '/sbin/', '/usr/bin/', '/usr/sbin/', '/opt/puppetlabs/
 
 include ::puphpet::params
 
-node loadbalancer {
+node /^*loadbalancer$/ {
   if array_true($haproxy, 'install') {
     class { '::the_shop_haproxy':
       boxes => $haproxy['boxes'],
