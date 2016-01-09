@@ -61,6 +61,11 @@ be fully and correctly provisioned.
   - Hosts setup: append `192.168.56.120 magento2.dev`line to your 
 [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system)
 
+#### "[GenericLAMP](https://github.com/the-shop/LAMPBox)" environment
+  - **STILL WIP**
+  - Will utilize Apache dynamic vhosts and map sources from `BoxData/GenericLAMP/` directory
+  - Hosts setup: docs for this are a TODO...
+
 To see what's exactly happening, check out `*.yaml` files in `/puphpet/boxes` directory
 
 ### Road map and current state of the project
