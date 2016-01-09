@@ -75,5 +75,6 @@ and Puppet files.
   1. Tested on Ubuntu 15.10 (Vagrant v1.7.4 and VirtualBox v5.0.10)
   2. READMEs are perhaps not 100% accurate, please file any issues via 
   [GitHub issues](https://github.com/the-shop/STARCommerceFrontend/issues)
-  3. Load Balancer statistics can be accessed at `http://star.commerce.dev/haproxy?stats` with username `haproxy` and 
-  password `password` - that can be changed in `/puphpet/boxes/hiera/loadbalancer.yaml` file
+  3. Load Balancer statistics can be accessed at `http://star.commerce.dev/haproxy?stats` or 
+  `http://magento2.dev/haproxy?stats` with username `haproxy` and password `password` - that can be changed in
+   `/puphpet/boxes/STARCommerce/hiera/loadbalancer.yaml` and/or `/puphpet/boxes/Magento2/hiera/loadbalancer.yaml` files.
