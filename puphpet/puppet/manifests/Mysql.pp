@@ -51,7 +51,7 @@ class puphpet_mysql (
   $settings = delete(deep_merge({
     'package_name'     => $server_package,
     'restart'          => true,
-    'override_options' => deep_merge($override_options, {'mysqld' => {'bind-address' => '192.168.56.101'}}),
+    'override_options' => $override_options,
     require            => Class['puphpet::mysql::repo'],
   }, $mysql['settings']), 'version')
 
