@@ -61,8 +61,8 @@ be fully and correctly provisioned.
 
 #### "[Magento2](https://github.com/the-shop/Magento2Boxes)" environment
   - Magento 2 will be accessible through load balancer at
-[http://magento2.dev](http://magento2.dev).
-  - Hosts setup: append `192.168.56.120 magento2.dev`line to your 
+[http://magento2distributed.dev](http://magento2distributed.dev).
+  - Hosts setup: append `192.168.56.120 magento2distributed.dev`line to your 
 [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system)
 
 #### "[GenericLAMP](https://github.com/the-shop/LAMPBox)" environment
