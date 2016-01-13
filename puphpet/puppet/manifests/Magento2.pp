@@ -17,12 +17,19 @@ class the_shop_magento2 (
 
   $install_complete_file = '/tmp/magento-install-complete.txt'
 
-  file {"${destination}/auth.json":
-    ensure => file,
-    content => $auth_json
+  file {"Ensure ${destination} is empty":
+    path => $destination,
+    ensure => directory,
+    purge => true,
+    recurse => true,
+    force => true,
+    backup => false,
   }
-
-  exec { "Download Magento2 installation (${source_tar_bz2})" :
+  ->file {"${destination}/auth.json":
+    ensure => file,
+    content => $auth_json,
+  }
+  ->exec { "Download Magento2 installation (${source_tar_bz2})" :
     command => "wget --quiet --tries=5 --connect-timeout=10 -O /tmp/Magento2.tar.bz2 ${source_tar_bz2}",
     user    => $webroot_user,
     group   => $webroot_group,
@@ -30,9 +37,6 @@ class the_shop_magento2 (
     onlyif  => "test ! -f /tmp/Magento2.tar.bz2",
     require  => [Class['Php::Devel'],Class['apache']],
     timeout     => 0,
-  }
-  ->file { "${destination}":
-    ensure => directory,
   }
   -> exec { "Extract Magento2 installation to ${destination}" :
     command => "tar -xjvf /tmp/Magento2.tar.bz2 -C ${destination}",

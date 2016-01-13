@@ -11,7 +11,8 @@ giving complete control over front end.
 
 ### 1. What is in here
 This repository is currently set up for local development and it utilizes [Vagrant](https://www.vagrantup.com/) with 
-[VirtualBox](https://www.virtualbox.org/) provider to emulate production environment on Windows, OS X and Linux.
+[VirtualBox](https://www.virtualbox.org/) provider to emulate production environment on Windows, OS X and Linux (note 
+that it has been tested just on Linux).
 
 You should [read more on Vagrant](https://docs.vagrantup.com/v2/why-vagrant/index.html) if you're not familiar with it
 before you proceed.
