@@ -53,6 +53,15 @@ node default {
     }
   }
 
+  if array_true($apache, 'mass_vhost') {
+    # TODO: refactor params
+    class { '::the_shop_mass_apache':
+      apache => $apache,
+      php    => $php,
+      hhvm   => $hhvm
+    }
+  }
+
   if array_true($beanstalkd, 'install') {
     class { '::puphpet_beanstalkd':
       beanstalkd => $beanstalkd,
