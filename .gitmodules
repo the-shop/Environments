@@ -1,9 +1,9 @@
 [submodule "puphpet/boxes/STARCommerce"]
 	path = puphpet/boxes/STARCommerce
-	url = git@github.com:the-shop/STARCommerceBoxes.git
+	url = https://github.com/the-shop/STARCommerceBoxes.git
 [submodule "puphpet/boxes/Magento2"]
 	path = puphpet/boxes/Magento2
-	url = git@github.com:the-shop/Magento2Boxes.git
+	url = https://github.com/the-shop/Magento2Boxes.git
 [submodule "puphpet/boxes/GenericLAMP"]
 	path = puphpet/boxes/GenericLAMP
-	url = git@github.com:the-shop/LAMPBox.git
+	url = https://github.com/the-shop/LAMPBox.git
