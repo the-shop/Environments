@@ -44,8 +44,10 @@ Here are the steps to get everything set from scratch:
 
   1. Install Vagrant and VirtualBox
   2. Clone this repository to your machine 
-  3. Run `sh command.sh <ENVIRONMENT> <VAGRANT_COMMAND>` (i.e. `sh command.sh STARCommerce up`)
-  4. Update your [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system) as described below
+  3. From project root, run `./init.sh` shell script (initializes dependencies, also perhaps not needed if you use tool 
+  such is [Github Desktop](https://desktop.github.com/))
+  4. Run `sh command.sh <ENVIRONMENT> <VAGRANT_COMMAND>` (i.e. `sh command.sh STARCommerce up`)
+  5. Update your [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system) as described below
   in individual [environment setup](README.md#environments) section
   
 ### Environments
