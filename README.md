@@ -1,7 +1,6 @@
-# STAR Commerce project
-STAR Commerce is front end component used for implementation of horizontally scalable eCommerce platforms. It utilizes
-existing administration interfaces and APIs of current eCommerce installations for entire back end functionality while
-giving complete control over front end.
+# The Shop development environments
+This repository contains Vagrant + VirtualBox + Puppet setup for multiple 
+[development environments](https://github.com/the-shop/Environments#environments). 
 
 ## Contents
   1. What is in here
