@@ -38,7 +38,7 @@ Our custom shell script for manipulation accepts following form: `./command.sh <
 
 So to start STARCommerce environment for example, you run following command `./command.sh STARCommerce up`. It will spin 
 up everything that you need to have local setup available for given environment. More on 
-[supported environments](https://github.com/the-shop/STARCommerce#environments) below.
+[supported environments](https://github.com/the-shop/Environments#environments) below.
 
 Here are the steps to get everything set from scratch:
 
