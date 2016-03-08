@@ -22,14 +22,14 @@ Supported box types are: loadbalancer, app (STARCommerce frontend box), database
 *This repo is a modified version of of [generated Puphpet template](https://puphpet.com/). Check it out, it's awesome!
 Also, all requirements they have, we have as well...*
 
-### Vagrant flow
+### 2. Vagrant flow
 Vagrant iterates over all files that match following `puphpet/boxes/<ENVIRONMENT>/*.yaml` and presumes they are the 
 definitions of VMs.
 
 YAML files are prepended with integers so that they boot and provision in correct order (i.e. magento2 box needs mysql 
 box to be available, and that's on `database` box, so database box will have lower integer prepended than magento2 box).
 
-### Setup
+### 3. Setup
 Because we support multiple environments, although standard vagrant commands work, they have to be called through our 
 `./command.sh` shell script.
 
@@ -64,7 +64,7 @@ Currently available environments are:
 To see what's exactly happening, check out `*.yaml` files in `/puphpet/boxes` directory after you run the `./init.sh`
 script.
 
-### Road map and current state of the project
+### 4. Road map and current state of the project
 Original road map planning is available at our [corporate blog](http://the-shop.io/star-commerce-roadmap/) and we're 
 **currently in phase of working on 
 [STARCommerceFrontend application](https://github.com/the-shop/STARCommerceFrontend)**.
@@ -72,7 +72,7 @@ Original road map planning is available at our [corporate blog](http://the-shop.
 This repository contains entire infrastructure definition and all repositories it depends on described through Vagrant 
 and Puppet files.
 
-### Notes
+### 5. Notes
   1. Tested on Ubuntu 15.10 (Vagrant v1.7.4 and VirtualBox v5.0.10) and OSX (Vagrant v1.7.4 and VirtualBox v5.0.10)
   2. READMEs are perhaps not 100% accurate, please file any issues via 
   [GitHub issues](https://github.com/the-shop/STARCommerceFrontend/issues)
